@@ -27,6 +27,8 @@ struct ContentView: View {
             } catch let exception {
                 debugPrint("exception: \(exception)")
             }
+            let featureFlagTesting = FeatureFlagTesting()
+            debugPrint("\(featureFlagTesting.testFeatureFlag())")
         }
 
     }

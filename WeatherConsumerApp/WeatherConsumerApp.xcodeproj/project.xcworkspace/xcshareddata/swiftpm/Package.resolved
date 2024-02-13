@@ -8,15 +8,6 @@
         "revision" : "2b6054efa051565954e1d2b9da831680026cd768",
         "version" : "4.3.0"
       }
-    },
-    {
-      "identity" : "weatherapi",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/awasthi027/weatherapi.git",
-      "state" : {
-        "revision" : "70e29116be0c13d2dfd8a71a845065115bcb6671",
-        "version" : "1.0.0"
-      }
     }
   ],
   "version" : 2

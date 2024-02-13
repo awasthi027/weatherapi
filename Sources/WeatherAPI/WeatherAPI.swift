@@ -17,7 +17,8 @@ public class WeatherAPI {
     private let dispatchGroup = DispatchGroup()
 
 
-    public init(forCity city: String) {
+public init(forCity city: String) {
+
         self.city = city.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? city.lowercased()
         let _ = try? getCurrentConditions()
     }

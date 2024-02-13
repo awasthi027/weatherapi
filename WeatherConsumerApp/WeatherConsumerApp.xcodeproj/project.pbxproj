@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C801D2962B7A474B003F9845 /* WeatherAPI in Frameworks */ = {isa = PBXBuildFile; productRef = C801D2952B7A474B003F9845 /* WeatherAPI */; };
+		C801D29C2B7A4BE8003F9845 /* WeatherAPI in Frameworks */ = {isa = PBXBuildFile; productRef = C801D29B2B7A4BE8003F9845 /* WeatherAPI */; };
 		C80CCCB52B77898F00CB7C58 /* WeatherConsumerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80CCCB42B77898F00CB7C58 /* WeatherConsumerAppApp.swift */; };
 		C80CCCB72B77898F00CB7C58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80CCCB62B77898F00CB7C58 /* ContentView.swift */; };
 		C80CCCB92B77899100CB7C58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C80CCCB82B77899100CB7C58 /* Assets.xcassets */; };
@@ -15,7 +17,6 @@
 		C80CCCD02B77899100CB7C58 /* WeatherConsumerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80CCCCF2B77899100CB7C58 /* WeatherConsumerAppUITests.swift */; };
 		C80CCCD22B77899100CB7C58 /* WeatherConsumerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80CCCD12B77899100CB7C58 /* WeatherConsumerAppUITestsLaunchTests.swift */; };
 		C80CCCE02B7789DC00CB7C58 /* WeatherAPI in Frameworks */ = {isa = PBXBuildFile; productRef = C80CCCDF2B7789DC00CB7C58 /* WeatherAPI */; };
-		C80CCCE32B778E0500CB7C58 /* WeatherAPI in Frameworks */ = {isa = PBXBuildFile; productRef = C80CCCE22B778E0500CB7C58 /* WeatherAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C80CCCE32B778E0500CB7C58 /* WeatherAPI in Frameworks */,
+				C801D2962B7A474B003F9845 /* WeatherAPI in Frameworks */,
+				C801D29C2B7A4BE8003F9845 /* WeatherAPI in Frameworks */,
 				C80CCCE02B7789DC00CB7C58 /* WeatherAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,7 +151,8 @@
 			name = WeatherConsumerApp;
 			packageProductDependencies = (
 				C80CCCDF2B7789DC00CB7C58 /* WeatherAPI */,
-				C80CCCE22B778E0500CB7C58 /* WeatherAPI */,
+				C801D2952B7A474B003F9845 /* WeatherAPI */,
+				C801D29B2B7A4BE8003F9845 /* WeatherAPI */,
 			);
 			productName = WeatherConsumerApp;
 			productReference = C80CCCB12B77898F00CB7C58 /* WeatherConsumerApp.app */;
@@ -224,7 +227,7 @@
 			);
 			mainGroup = C80CCCA82B77898F00CB7C58;
 			packageReferences = (
-				C80CCCE12B778E0500CB7C58 /* XCRemoteSwiftPackageReference "weatherapi" */,
+				C801D29A2B7A4BE8003F9845 /* XCLocalSwiftPackageReference ".." */,
 			);
 			productRefGroup = C80CCCB22B77898F00CB7C58 /* Products */;
 			projectDirPath = "";
@@ -600,25 +603,24 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		C80CCCE12B778E0500CB7C58 /* XCRemoteSwiftPackageReference "weatherapi" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/awasthi027/weatherapi.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		C801D29A2B7A4BE8003F9845 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C80CCCDF2B7789DC00CB7C58 /* WeatherAPI */ = {
+		C801D2952B7A474B003F9845 /* WeatherAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = WeatherAPI;
 		};
-		C80CCCE22B778E0500CB7C58 /* WeatherAPI */ = {
+		C801D29B2B7A4BE8003F9845 /* WeatherAPI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C80CCCE12B778E0500CB7C58 /* XCRemoteSwiftPackageReference "weatherapi" */;
+			productName = WeatherAPI;
+		};
+		C80CCCDF2B7789DC00CB7C58 /* WeatherAPI */ = {
+			isa = XCSwiftPackageProductDependency;
 			productName = WeatherAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
